@@ -1,0 +1,49 @@
+.productions-template-default {
+  #page-wrapper {
+    background: url(../../images/body-bg2.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .wrapper.style5 {
+    background: transparent;
+    .inner {
+      .left {
+        width: 59%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .right {
+        width: 39%;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+  .row {
+    padding: 0 4em 4em 6em;
+  }
+  iframe {
+    max-width: 100%;
+  }
+  .single-productions .inner p {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  @media screen and (max-width: 736px) {
+
+    .wrapper.style5 {
+      .inner {
+        .left, .right {
+          width: 98%;
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+    .single-productions .inner p {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
+
+}

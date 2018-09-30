@@ -1,0 +1,51 @@
+#banner {
+  font-size: 13pt;
+  a {
+    border-bottom: none;
+  }
+  h2:before, h2::after {
+    background: grey;
+    height: .025em;
+  }
+  h2 {
+    a img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .box {
+    margin: 2em auto 0;
+    background-color: rgba(0, 0, 0, .35);
+    background-color: rgba(0, 0, 0, 0.125);
+    width: 33.3333333%;
+    p {
+      letter-spacing: 1px;
+    }
+//    border: 2px solid white;
+//    opacity: .7;
+  }
+  .more {
+    width: 20em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+
+  .box {
+    width: 100%;
+  }
+
+  #banner {
+    font-size: 11pt;
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 1em;
+    .box {
+      width: 100%;
+    }
+    .more {
+      display: block;
+    }
+  }
+
+}

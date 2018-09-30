@@ -1,0 +1,18 @@
+aside.widget-area {
+  @include flexbox;
+  @include flex-wrap(wrap);
+  @include justify-content(space-evenly);
+  .footer-widget-1, .footer-widget-2, .footer-widget-3, .footer-widget-4 {
+    @include flex(1 1 26em);
+    width: 45%;
+    padding: 0 2%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .footer-widget-2 {
+    text-align: center;
+    p {
+      text-align: center;
+    }
+  }
+}

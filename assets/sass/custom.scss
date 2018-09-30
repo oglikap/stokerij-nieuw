@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Bevan');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+@import "flex";
+$red: #782121;
+$red: #ab1616;
+$red: #800000;
+//$red: #ff5722;
+//$red: #ff3d00;
+
+body {
+  font-family: 'PT Sans', sans-serif;
+//  font-family: 'Josefin Sans', sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+//  color: $red;
+//  text-transform: uppercase;
+//  font-family: 'Bevan', cursive;
+//  font-weight: normal;
+//  opacity: .8;
+//  color: #333;
+}
+$red6: rgba(120, 33, 33, .5);
+
+hr {
+  border-bottom: 1px solid grey;
+}
+h3 a {
+  border: 0;
+  color: $red;
+  &:hover {
+    color: #777;
+  }
+}
+
+p.wp-caption-text {
+  font-size: 80%;
+}
+#one, #two {
+  background: white;
+  background: url(../../images/body-bg2.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  p {
+    color: rgb(0, 0, 10);
+  }
+  h2 {
+    color: $red;
+  }
+}
+.flex {
+  @include flexbox;
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+}
+
+ul.query {
+  @include flexbox;
+  @include justify-content(space-evenly);
+  @include flex-wrap(wrap);
+  font-size: 10pt;
+  > li {
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto 2em;
+    vertical-align: text-top;
+    @include flex(0 1 22em);
+    background: rgba(255, 255, 245, .75);
+  //  box-shadow: 0px 4px 10px rgba(150, 150, 150, 0.1);
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    position: relative;
+    border-radius: 1%;
+    &:hover {
+      top: -4px;
+    }
+    &.hover {
+      transition: all 0,2s ease-in-out;
+
+    }
+    h3 {
+      height: 3em;
+      line-height: 1.25;
+      color: #777;
+      color: rgb(0, 0, 10) !important;
+      margin-top: 1em;
+    }
+    img {
+      box-shadow: 0px 4px 10px rgba(150, 150, 150, 0.1);
+
+    }
+    p {
+      line-height: 1.25em;
+      padding: 1em;
+    }
+    a {
+      border-bottom: 0;
+    }
+  }
+}
+
+.query {
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  
+}
+.excerpt {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-template-default, .page-template-page-jong, .archive {
+  .box {
+    min-height: 25vh;
+    @include align-items(center);
+  }
+}
+
+.box {
+  width: 50%;
+  border: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, .5);
+  background: rgba(7, 7, 7, 0.5);
+}
+
+body.landing #footer {
+  background-color: rgba(29, 36, 42, 1);
+}
+
+.post-type-archive {
+  #main > header {
+    background-image: url(../../images/banner.jpg) !important;
+  }
+}
+
+.major:after {
+  background-color: white;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  margin: .5em auto 0;
+  position: relative;
+  width: 5em;
+  text-align: center;
+  @include flexbox;
+}
+
+.gallery > ul > li {
+  display: inline-block;
+  > a > img {
+    border: 2px solid white;
+  }
+}
+
+#three .inner {
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  tr.gigpress-tour td {
+    background: transparent;
+  }
+  th.gigpress-heading {
+    background: rgba(238, 238, 238, .25);
+  }
+  .gigpress-info {
+    background: $red6;
+    background: rgba(0, 0, 0, .35);
+
+  }
+  tr.gigpress-info td {
+    color: white;
+  }
+  .actions {
+    margin: 2em auto 1em;
+    text-align: center;
+  }
+}
+#ctf .ctf-tweet-actions a.ctf-reply, #ctf .ctf-tweet-actions a.ctf-retweet, #ctf .ctf-tweet-actions a.ctf-like {
+  color: #bbb;
+}
+#wpmchimpaw-1 .wpmchimpa-subs-button:hover {
+  background: $red !important;
+}
+
+#footer .copyright {
+  padding: 0 2em;
+}
+
+.eapps-facebook-feed {
+  margin: auto !important;
+}
+
+@media screen and (max-width: 736px) {
+
+  #eapps-facebook-feed-1 .eapps-facebook-feed {
+      width: 96% !important;
+  }
+
+}
+
+@import "wpcss";
+@import "header";
+@import "banner";
+@import "line-between";
+@import "widget";
+@import "sidebar";
+@import "navigation";
+@import "news";
+@import "scrollback";
+@import "productions";
+@import "opstokerij";
+@import "hvrbox";

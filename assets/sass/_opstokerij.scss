@@ -1,0 +1,40 @@
+.opstokerij-template-default {
+
+  #main > header {
+    background-size: contain;
+    background-position: 50% 20%;
+    background-attachment: scroll;
+    height: 29em;
+    background-color: black;
+  }
+  .box {
+    background: transparent;
+    width: 70%;
+    text-align: center;
+  }
+
+  #sidebar {
+    header h3 {
+      font-size: 200%;
+      color: yellow;
+    }
+    .block {
+      text-align: center;
+      hr {
+        width: 66.66666%;
+        margin: 0 auto 2em;
+      }
+      h2 {
+        font-size: 175%;
+      }
+      img {
+        text-align: right;
+      }
+    }
+  }
+
+  ul.navigation li a {
+    color: yellow;
+  }
+
+}

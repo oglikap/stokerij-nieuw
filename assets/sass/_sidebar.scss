@@ -1,0 +1,24 @@
+#sidebar {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(flex-start);
+  @include flex-wrap(wrap);
+  hr {
+    width: 100%;
+  }
+  .block {
+//    width: 48%;
+    display: inline-block;
+    vertical-align: text-top;
+    @include flex(0 1 32em);
+    margin: 0 auto;
+    padding-bottom: 2em;
+    p, header h3 {
+//      text-align: center;
+    }
+    p {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+}
